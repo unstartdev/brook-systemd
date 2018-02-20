@@ -1,0 +1,10 @@
+[Unit]
+Description=Brook Servers
+
+[Service]
+EnvironmentFile=/path/to/EnvironmentFile
+ExecStart=/path/to/brook servers $COMMANDBK
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
