@@ -1,0 +1,10 @@
+[Unit]
+Description=Brook Client
+
+[Service]
+EnvironmentFile=/path/to/EnvironmentFile
+ExecStart=/path/to/brook client $COMMANDBKH --http
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
